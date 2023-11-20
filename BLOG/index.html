@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <title>hθρ</title>
+</head>
+<body>
+    <!-- debut du code  -->
+
+<div id="page_container">
+  
+	<div id="main_content">
+
+		<div class="front face">
+    		
+    		<!-- barre -->
+    		
+    		<header class="clearfix">
+	
+				<nav class="clearfix">
+					<a id="menu-toggle" class="anchor-link" href="#mobile-nav">MENU</a>
+					<ul>
+			        	<li><a href="./index.html">Home</a></li>
+			        	<li><a href="#">About</a></li>
+			        	<li><a href="./collection.html">Collection</a></li>
+			        	<li><a href="./blog.html">Blog</a></li>
+			        	<li><a href="#">Contact</a></li>
+			        	<li><a href="./directions.html">Directions</a></li>
+			        </ul>
+				</nav>
+			
+				<h1>hθρ blog</h1>
+
+			</header>
+			
+			
+			<article class="clearfix">
+				
+				<p>The idea behind this responsive menu is that as we get to a certain width (less than 768px), the menu goes away and we are presented with a single "menu" button. Pretty standard stuff. <em>Then</em> when that button is clicked, the entire page flips around to reveal the navigation.</p>
+				
+				<p>The navigation takes up the entire "backside" of the page. This gives you lots of flexibility to style the menu to however you see fit!</p>
+				
+				<p>I also like the user's experience here. By watching the site flip they know that they are viewing a different panel. As opposed to putting your menu in the footer and using an anchor link (which could cause an abrupt jump) this methods lets the user see what's happening. It's a similar thought process behind the "off-canvas" page slide which facebook uses.</p>
+				
+				<p>Right now this is just in beta. While working with navigation in responsive design, I thought it might be fun to put the menu on the "backside" of the page content. This frees us up to do whatever the hell we want with the menu on the backside of the page! <del>It might not be quite semantic and probably doesn't yet* provide a fallback solution, but that shouldn't be too hard!</del> <span style="color:red;">***Update:</span> I added a fallback for devices without Javascript OR devices that don't support CSS transformations.  If a device doesn't have JS or support CSS transforms, then the menu simply appears in the footer and the menu link at the top anchors them to that position in the footer.</p>
+				
+				 
+			
+			</article>
+			
+			
+			<footer>
+			
+				<p class="copyright"><a href="">**********</a></p>
+				
+			</footer>
+  		
+  		</div>
+        
+        <!-- END .front -->
+  		
+  		<div class="back face center">
+    		
+    		<!-- BACK FACING CONTENT (NAV) HERE -->
+    		
+    		<header class="clearfix">
+    			
+    			<a id="return" class="anchor-link" href="#">RETURN</a>
+    			
+    		</header>
+    		
+    		<nav id="mobile-nav">
+	
+				<ul>
+		        	<li><a href="#">Home</a></li>
+		        	<li><a href="#">About</a></li>
+		        	<li><a href="#">Collection</a></li>
+		        	<li><a href="#">Blog</a></li>
+		        	<li><a href="#">Contact</a></li>
+		        	<li><a href="#">Directions</a></li>
+		        </ul>
+        
+		    </nav>
+    		
+  		</div>
+        
+        <!-- END .back -->
+  		
+	</div>
+    
+    <!-- END #main_content -->
+
+</div>
+
+<!-- END #page_container -->
+<!-- main.js -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src=""></script>
+
+</body>
+</html>
